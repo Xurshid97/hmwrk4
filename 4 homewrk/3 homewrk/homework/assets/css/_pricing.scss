@@ -1,0 +1,102 @@
+.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    
+    h2 {
+        font-weight: 500;
+        font-size: 35px;
+        color: #0B132A;
+        text-align: center;
+    }
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #4F5665;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    .prc_cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .prc_card {
+        padding: 50px 70px;
+        background: #FFFFFF;
+        border: 2px solid #DDDDDD;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            border: 2px solid red;
+        }
+
+        .prc_img {
+            width: 145px;
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-weight: 500;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            margin-bottom: 130px;
+        }
+        ul li {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #4F5665;
+
+            i {
+                color: #2FAB73;
+            }
+        }
+
+        h4 {
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
+            color: #0B132A;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 13px 62px;
+            background-color: inherit;
+            border: 2px solid #F53838;
+            border-radius: 50px;
+            color: #F53838;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover {
+                color:#ffffff;
+                background-color: #F53838;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .pricing {
+        .prc_cards {
+            justify-content: center;
+            .prc_card {
+                padding: 50px;
+            }
+        }
+    }
+}

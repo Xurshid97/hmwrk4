@@ -1,0 +1,66 @@
+.digital {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 90px 0;
+    margin-top: 100px;
+
+
+    .digcart {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        color: #4F5665;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 25px 0;
+
+        .dig_img {
+            width: 55px;
+            height: 55px;
+        }
+        span {
+            font-weight: 800;
+            font-size: 25px;
+            color: #0B132A;
+            margin-bottom: 5px;
+        }
+    }
+    .digcart:nth-of-type(2) {
+        border-right: 2px solid #EEEFF2;
+        border-left: 2px solid #EEEFF2;
+        padding: 25px 150px;
+    }
+}
+
+@media (max-width: 1150px){
+    .digital {
+        .digcart:nth-of-type(2) {
+            padding: 0 50px;
+        }
+    }
+    
+ }
+
+ @media (max-width: 800px){
+    .digital {
+        .digcart:nth-of-type(2) {
+            padding: 0 30px;
+        }
+    }
+    
+ }
+
+ @media (max-width: 680px){
+    .digital {
+        flex-direction: column;
+        gap: 50px;
+
+        .digcart:nth-of-type(2) {
+            border: none;
+        }
+    }
+    
+    
+ }
